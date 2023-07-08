@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login & Signup</title>
+  <style>
+    body {
+      background-color: #767676;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .form {
+      background-color: #FFF;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
+      max-width: 400px;
+      width: 100%;
+    }
+    
+    .form h2 {
+      text-align: center;
+      color: #F90;
+      margin-bottom: 20px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #767676;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #767676;
+      border-radius: 5px;
+      transition: border-color 0.3s ease-in-out;
+    }
+    
+    .form-group input:focus {
+      outline: none;
+      border-color: #F90;
+    }
+    
+    .form-group button {
+      background-color: #F90;
+      color: #FFF;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    .form-group button:hover {
+      background-color: #FFA500;
+    }
+    
+    .form-switch {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+    
+    .form-switch input[type="checkbox"] {
+      display: none;
+    }
+    
+    .form-switch label {
+      color: #767676;
+      cursor: pointer;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .form-switch input[type="checkbox"]:checked + label {
+      color: #F90;
+    }
+    
+    .login-content {
+      text-align: center;
+      margin-top: 20px;
+      color: #767676;
+    }
+    
+    .login-content span {
+      color: #F90;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <h2>Login</h2>
+      <form>
+        <div class="form-group">
+          <label for="login-email">Email</label>
+          <input type="email" id="login-email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="login-password">Password</label>
+          <input type="password" id="login-password" placeholder="Enter your password">
+        </div>
+        <div class="form-group">
+          
+          <button type="submit"><a href="index.html">Login</a></button>
+        </div>
+        <div class="form-switch">
+          <input type="checkbox" id="toggle-form" />
+          <label for="toggle-form">Create an account</label>
+        </div>
+      </form>
+      <div class="login-content">
+        <p>Hello <span>User</span></p>
+        <p>Welcome to <span>JobHub</span></p>
+      </div>
+    </div>
+    <div class="form" style="display: none;">
+      <h2>Signup</h2>
+      <form>
+        <div class="form-group">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" placeholder="Enter your password">
+        </div>
+        <div class="form-group">
+          <label for="signup-confirm-password">Confirm Password</label>
+          <input type="password" id="signup-confirm-password" placeholder="Confirm your password">
+        </div>
+        <div class="form-group">
+          <button type="submit">Signup</button>
+        </div>
+        <div class="form-switch">
+          <input type="checkbox" id="toggle-form" checked />
+          <label for="toggle-form">Already have an account?</label>
+        </div>
+      </form>
+      <div class="login-content">
+        <p>Hello <span>User</span></p>
+        <p>Welcome to <span>JobHub</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const toggleForm = document.getElementById('toggle-form');
+    const loginForm = document.querySelector('.form:nth-child(1)');
+    const signupForm = document.querySelector('.form:nth-child(2)');
+
+    toggleForm.addEventListener('change', function() {
+      loginForm.style.display = this.checked ? 'block' : 'none';
+      signupForm.style.display = this.checked ? 'none' : 'block';
+    });
+  </script>
+</body>
+</html>

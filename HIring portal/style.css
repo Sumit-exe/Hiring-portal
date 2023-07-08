@@ -1,0 +1,249 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #130D0D;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    justify-content: space-between;
+    padding: 0 4rem;
+    border-bottom: 1px solid #797676;
+    
+}
+header .logo img{
+    width: 10rem;
+    cursor: pointer;
+}
+header .searchBar{
+    background: #797676;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 30px;
+    width: 30rem ;
+    color: #fff;
+    margin-right: 15rem;
+}
+.searchBar span{
+    padding-left: 6px;
+}
+.searchBar input{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    width: 100%;
+    padding: .5rem;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    
+    padding: .5rem;
+}
+header .header-right img{
+    width: 2rem;
+    margin: 0 20px;
+}
+span{
+    color: #FFFFFF;
+    margin: 5px 30px 0 0;
+}
+::placeholder{
+    color: #FFFFFF;
+}
+.Hero{
+    margin-left: 25vw;
+    margin-top: 18px;
+    padding-left: 40px;
+}
+.sideBar{
+    position: absolute;
+    top:3.6rem;
+    left: 0;
+    margin-left: 90px;
+    max-width: 25%;
+    height: 100vh;
+    border-right: 1px solid #797676;
+}
+.sideBarCard{
+    position: relative;
+    background: #2E2C2C;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    width: 18rem;
+    margin: 10px 0;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.sideBarCard.active{
+    background: #FF9900;
+}
+.sideBarCard:hover{
+    box-shadow: -1px 4px 30px -10px #797676;
+    transform: scale(1.02);
+}
+.sideBarCard span{
+    font-size: 30px;
+    padding-left: 18px;
+    margin-bottom: 4px;
+    
+}
+.sideBarCard h5{
+    font-size: 20px;
+    margin-top: 2px;
+    margin-left: -20px;
+}
+.sideBar p{
+    color: circle;
+    margin-top: 25px;
+}
+.setting{
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    height: 25px;
+}
+.setting span{
+    margin-left: 20px;
+}
+.setting p{
+    color: #FFFFFF; 
+    margin-bottom:18px;
+    margin-left: -20px;
+}
+
+.jobCard{
+    position: absolute;
+    margin-top: 12px;
+    height: 24vh;
+    width: 20vw;
+    background: #2E2C2C;
+    border-radius: 10px; 
+    padding: 10px;
+}
+.jobCard:hover{
+    box-shadow: -1px 4px 20px -10px #797676;
+    transform: scale(1.02);
+}
+.jobCard .jobCardTop{
+    display: flex;
+    align-items: center;
+}
+.jobCard .jobCardTop img{
+    width: 50px;
+    margin-right: 10px;
+}
+.jobCard .jobCardTop p{
+    font-size: 10px;
+    
+}
+.jobCard .jobCardTop h2{
+    font-weight: 700
+}  
+.readMore{
+    position: absolute;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.readMore span{
+    font-size: 35px;
+    margin: -40px;
+    z-index: 1;
+}
+.circle{
+    height: 3rem;
+    width: 3rem;
+    background: #797676;
+    border-radius: 50%;
+}  
+.location{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.jobCardMid{
+    display: flex;
+}
+.locBack{
+    position: relative;
+    height: 4vh;
+    width: 7vw;
+    background: #797676;
+    border-radius: 2vh;
+}
+.location span{
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.location p{
+    position: absolute;
+    left: 40px;
+    font-size: 12px;
+}
+.jobCard .apply{
+    margin-top: 40px;
+    color: #FF9900;
+    font-size: 14px;
+}
+.facebook{
+    margin-left: 22vw;
+}
+.studyMonk{
+    margin-left: 44vw;
+}
+.microsoft{
+    /* margin-left: 44vw; */
+    margin-top: 29vh;
+}
+.google_1{
+    margin-left: 22vw;
+    margin-top: 29vh;
+}
+.google_1{
+    margin-left: 44vw;
+    margin-top: 29vh;
+}
+.studyMonk_2{
+    
+    margin-top: 58vh;
+}
+.microsoft_1{
+    margin-left: 22vw;
+    margin-top: 58vh;
+}
+.studyMonk_1{
+    margin-left: 44vw;
+    margin-top: 58vh;
+}
+.facebook_1{
+    margin-left: 22vw;
+    margin-top: 29vh;
+}
+.microsoft_2{
+    margin-left: 22vw;
+    margin-top: 29vh;
+}
+
